@@ -6,7 +6,7 @@ public:
 
 	virtual void DoFrame() override;
 
-	virtual int Run();
+	virtual int Run() override;
 
 	void HandleNewClient( ClientProxyPtr inClientProxy );
 	void HandleLostClient( ClientProxyPtr inClientProxy );

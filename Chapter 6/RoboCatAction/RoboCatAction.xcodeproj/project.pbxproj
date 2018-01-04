@@ -312,6 +312,13 @@
 			path = Src;
 			sourceTree = "<group>";
 		};
+		1C1AB4101FF236B500BB55A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9202F9241BFFE0DF00C30060 = {
 			isa = PBXGroup;
 			children = (
@@ -319,6 +326,7 @@
 				035E462A1C0651FB00CCB512 /* RoboCatServer */,
 				9202F92F1BFFE0DF00C30060 /* RoboCat */,
 				9202F92E1BFFE0DF00C30060 /* Products */,
+				1C1AB4101FF236B500BB55A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -600,7 +608,10 @@
 					"$(SRCROOT)/RoboCatClient/Inc",
 					"$(SRCROOT)/RoboCat/Inc",
 				);
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/SDL/lib/mac";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/SDL/lib/mac",
+					"$(PROJECT_DIR)/SDL/lib/mac",
+				);
 				OTHER_LDFLAGS = (
 					"-lSDL2_ttf-2.0.0",
 					"-lSDL2-2.0.0",
@@ -622,7 +633,10 @@
 					"$(SRCROOT)/RoboCatClient/Inc",
 					"$(SRCROOT)/RoboCat/Inc",
 				);
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/SDL/lib/mac";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/SDL/lib/mac",
+					"$(PROJECT_DIR)/SDL/lib/mac",
+				);
 				OTHER_LDFLAGS = (
 					"-lSDL2_ttf-2.0.0",
 					"-lSDL2-2.0.0",
